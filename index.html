@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="setTextarea()">
+
+    <div class="main">
+        <div class="box">
+            <div id="boxShadow"></div>
+        </div>
+
+        <div class="properties">
+            <div class="column">
+                <label for="">Horizontal Shadow:</label>
+                <input type="range" min="-100" max="100" onchange="changeShadow()" id="horizontalShadow">
+            </div>
+
+            <div class="column">
+                <label for="">Vertical Shadow:</label>
+                <input type="range" min="-100" max="100" onchange="changeShadow()" id="verticalShadow">
+            </div>
+
+            <div class="column">
+                <label for="">Blur Radius:</label>
+                <input type="range" min="-100" max="100" onchange="changeShadow()" id="blurRadius">
+            </div>
+
+            <div class="column">
+                <label for="">Spread Radius:</label>
+                <input type="range" min="-100" max="100" onchange="changeShadow()" id="spreadRadius">
+            </div>
+
+            <div class="column">
+                <label for="">Shadow Color:</label>
+                <input type="color" onchange="changeShadow()" id="shadowColor">
+            </div>
+
+            <div class="column">
+                <label for="">Shadow Color Opacity:</label>
+                <input type="range" min="0" max="1" onchange="changeShadow()" step="0.1" id="shadowColorOpacity">
+            </div>
+
+            <div class="row">
+                <label for="">Inset Shadow:</label>
+                <input type="checkbox" id="insetShadow" onchange="changeShadow()">
+            </div>
+
+            <div class="row">
+                <textarea id="information"></textarea>
+                <button>Copy</button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <script src="/app.js"></script>
+</body>
+
+</html>
